@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PENGALAMAN SAYA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<div id="particles-js"></div>
+
+
+  <h1 style="text-align:center;">PENGALAMAN SAYA</h1>
+
+<div class="container">
+  <div class="photo" style="animation-delay: 0.4s">
+    <img src="mikrotik.jpg" alt="Pengalaman 1" />
+    <div class="caption">mendapat sertif MTCNA</div>
+  </div>
+
+<div class="photo" style="animation-delay: 0.5s">
+    <img src="fotografi.jpg" alt="Pengalaman 2" />
+    <div class="caption">bisa mengoperasikan kamera</div>
+  </div>
+
+  <div class="photo" style="animation-delay: 0.6s">
+    <img src="feed 1.jpg" alt="Pengalaman 3" />
+    <div class="caption">desain feed 1 menggunakan CANVA</div>
+  </div>
+
+  <div class="photo" style="animation-delay: 0.7s">
+    <img src="feed 2.jpg" alt="Pengalaman 4" />
+    <div class="caption">desain feed 2 menggunakan CANVA</div>
+  </div>
+
+  <div class="photo" style="animation-delay: 0.8s">
+    <img src="aplikasi edit.jpg" alt="Pengalaman 5" />
+    <div class="caption">mahir menggunakan apk edit foto</div>
+  </div>
+
+  <div class="photo" style="animation-delay: 0.9s">
+    <img src="edit lr.jpg" alt="Pengalaman 6" />
+    <div class="caption">mahir edit foto di LR</div>
+  </div>
+
+  <div class="photo" style="animation-delay: 0.10s">
+    <img src="buat film.jpg" alt="Pengalaman 7" />
+    <div class="caption">buat film</div>
+  </div>
+
+   <div class="photo" style="animation-delay: 0.11s">
+    <img src="config.jpg" alt="Pengalaman 8" />
+    <div class="caption">konfigurasi Mikrotik</div>
+  </div>
+
+   <div class="photo" style="animation-delay: 0.12s">
+    <img src="osis.jpg" alt="Pengalaman 9" />
+    <div class="caption">pengurus OSIS 2022-2024</div>
+  </div>
+
+   <div class="photo" style="animation-delay: 0.13s">
+    <img src="pkl.jpg" alt="Pengalaman 10" />
+    <div class="caption">pernah pkl di PT HYPERNET INDODATA</div>
+  </div>
+
+  <script src="script.js"></script>
+<script>
+const cards = document.querySelectorAll('.photo');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('show');
+        }, index * 200); // Delay per kartu
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('particles.js loaded - callback');
+ }); 
+</script>
+
+
+</body>
+<div class="back-button-container">
+  <a href="index.html" class="back-button">Beranda</a>
+</div>
+
+</html>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  
+</body>
+</html>
+
+  <style>
+
+  body {
+    background-color: #e51fa3;
+    font-family: 'popins', sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .foto-hobi {
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .foto-hobi:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 20zpx;
+    text-decoration: none;
+    color: #ff00f7;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  
+  body {
+    margin: 0;
+    padding: 50px;
+    font-family: 'popins', sans-serif;
+    text-align: center;
+    background: linear-gradient(-45deg, #ffffff, #989594, #585458, #040004);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+  }
+
+  .foto-hobi {
+    width: 300px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .foto-hobi:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+</style>
+  
+   
+</head>
+<body>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id"> 
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Candra</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(-45deg, #ffffff, #989594, #585458, #040004);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+
+    .wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 0 60px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    section {
+      margin-top: 60px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      backdrop-filter: blur(8px);
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .projects {
+      display: grid;
+      gap: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #ddd;
+    }
+  
+
+  /* Animasi masuk saat load */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1.5s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Efek saat hover (gambar membesar sedikit) */
+  img:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+  }
+</style>
+
+</head>
+<body>
+
+
+
+  <!-- Background Partikel -->
+  <div id="particles-js"></div>
+
+  <!-- Wave SVG di atas -->
+  <svg class="wave" viewBox="0 0 1440 320">
+    <path fill="#ffffff" fill-opacity="0.3" d="M0,160L80,170.7C160,181,320,203,480,192C640,181,800,139,960,138.7C1120,139,1280,181,1360,202.7L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+  </svg>
+
+  <!-- Konten Portofolio -->
+  <header>
+    <h1 data-aos="fade-down">Halo semua,saya candra</h1>
+    <h4 data-aos="fade-down">dari</h4>
+    <p data-aos="fade-up" data-aos-delay="400">Prodi Sistem Informasi</p>
+
+
+  </header>
+
+  <section class="about" data-aos="fade-right">
+    <h2>Tentang Saya</h2>
+        <p>nama di atas adalah nama panggilan saya,perkenalkan nama saya Putu Candra Winasa.</p>
+        <P>asli saya dari Buleleng,dan tinggal di Batubulan Kangin,lebih tepatnya di Br.puseh.</P>
+         <p>Saya adalah Mahasiswa Fakultas Teknologi Informasi dan Desain Universitas Primakara.
+         <p>Prodi Sistem Informasi ,web portofolio ini saya buat dengan chat gpt karena saya belum begitu paham
+             yang namanya coding </p>
+         <p>ini hasil dari belajar sedikit-sedikit,dan web ini tidak sepenuhnya menggunakan AI 
+             ini saya modif sedikit agar terlihat menarik. </p>
+         <p> Saya merupakan alumni SMK N 1 MAS UBUD Jurusan TKJT (Teknik Komputer Jaringan dan Telekomunikasi) </p>
+    
+  </section>
+
+   <section class="projects" data-aos="zoom-in-up">
+
+<button onclick="window.open('musik.html', 'musik', 'width=1,height=1')">Putar Musik</button>
+
+
+  <h2>Detail tentang saya</h2>
+  <a href="hobby.html" class="card">HOBBY SAYA</a>
+  <a href="pengalaman.html" class="card"> PENGALAMAN SAYA</a> 
+  
+</section>
+
+
+  <footer data-aos="fade-up" data-aos-delay="2">
+    © 2025 putu candra winasa di buat dengan, AOS & particles.js.
+  </footer>
+
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <!-- Script Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 70 },
+        size: { value: 3 },
+        color: { value: "#ffffff" },
+        move: { speed: 1 },
+        line_linked: { enable: true, distance: 150, color: "#ffffff" }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>
+
+
+<audio id="musik" loop>
+  <source src="@coldplay - Clocks (Lyrics).mp3" type="audio/mpeg">
+</audio>
+
+
+</audio>
+
+
+
+</body>
+
+
+</html>
